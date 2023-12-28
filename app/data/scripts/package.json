@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3"
+  },
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "commander": "^9.4.1",
+    "crypto-js": "^4.1.1",
+    "eventsource": "^2.0.2",
+    "got": "^11.8.2",
+    "minimist": "^1.2.7",
+    "moment": "^2.29.4",
+    "optimist": "^0.6.1",
+    "qrcode": "^1.5.3"
+  }
+}

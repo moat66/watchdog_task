@@ -1,0 +1,70 @@
+watchdog:
+  # 服务的地址
+  server-path: http://localhost:8081
+  # 配置管理员唯一识别id
+  manager: ''
+  data:
+    # 数据库类型，当前仅支持mysql
+    type:
+    datapath:
+    dataname:
+    username:
+    password:
+  doc:
+    # 是否开启api文档
+    enable: false
+  admin:
+    # 管理员用户名
+    username:
+    # 管理员密码
+    password:
+    # 是否开启登录二步验证
+    two-factor-activated: false
+    two-factor-secret:
+  wx-bot:
+    # 微信消息http回调地址token
+    token:
+  interval:
+    # 指令响应间隔，用户发生消息
+    receive-msg: 2
+    # 消息发送间隔，服务端向用户发生消息间隔
+    send-msg: 0
+  task:
+    # 任务会话超时
+    session: 3600
+  web:
+    register:
+      # 是否开启web的注册服务
+      enable: true
+      # 每天单个ip允许注册的数量
+      count: 2
+    email:
+      # 是否开启web的邮件服务（用户注册验证，密码重置认证）
+      enable: false
+    login:
+      # 用户登录时允许密码错误的最大次数，超出后将限制登录
+      retries: 5
+      # 用户登录后，多长时间账号登录状态会失效，单位 秒
+      expired: 1209600
+    # 为web端http接口频率限制
+    message:
+      # web消息接口获取频率
+      get: 5
+      # web消息接口发生频率
+      send: 5
+  inform:
+    # 服务启动后通知管理员
+    start: true
+    # 管理员登录后通知管理员
+    login: false
+    # 配置文件动态更新后通知管理员
+    change-configuration: false
+  email:
+    # 未配置邮箱(SMTP_NONE) QQ邮箱(SMTP_QQ)、QQ企业邮箱(SMTP_ENTERPRISE_QQ)、新浪邮箱(SMTP_SINA)、网易163邮箱(SMTP_163)、中国移动139邮箱(SMTP_139)
+    type:
+    # 邮箱账号
+    username:
+    # 邮箱密码（qq邮箱、163邮箱需要的是邮箱授权码，新浪邮箱直接是邮箱登录密码）
+    password:
+    # 发件人定制别名
+    senderNickname:
